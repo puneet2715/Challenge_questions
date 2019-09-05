@@ -23,10 +23,12 @@ int main()
               {
                if(i%j==0)
                {
-
-                   cout<<i<<" is the prime HCF";
                    break;
                }
+              if(j==2)
+              {
+                  cout<<i<<" is the prime hcf";
+              }
               }
          }
       }
@@ -38,10 +40,12 @@ int main()
               {
                if(i%j==0)
                {
-
-                   cout<<i<<" is the prime HCF";
                    break;
                }
+              if(j==2)
+              {
+                  cout<<i<<" is the prime hcf";
+              }
               }
          }
      }
