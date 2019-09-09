@@ -18,7 +18,7 @@ int main()
          cin>>fspiral[i][j];
     }
 cout<<"The required spiral is"<<endl;
-for(int k=0;k=-1;k++)
+for(int k=0;k>-1;k++)
 {
     for(int j=k;j<=(m-k);j++) //L to R
     {
