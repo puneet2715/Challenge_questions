@@ -7,10 +7,10 @@ int main()
     int n1,m1,n,m,c=0,brk;
     cout<<"enter the number of rows,columns of matrix"<<endl;
     cin>>n1>>m1;
+    brk=n1*m1;
     n=n1-1;
     m=m1-1;
-    brk=n1*m1;
-    int fspiral[n][m];
+    int fspiral[n1][m1];
     cout<<endl<<"Enter the content of the matrix"<<endl;
     for(int i=0 ;i<=n;i++)
     {
@@ -18,7 +18,7 @@ int main()
          cin>>fspiral[i][j];
     }
 cout<<"The required spiral is"<<endl;
-for(int k=0;k=-1;k++)
+for(int k=0;k>-1;k++)
 {
     for(int j=k;j<=(m-k);j++) //L to R
     {
@@ -47,7 +47,7 @@ for(int k=0;k=-1;k++)
         cout<<fspiral[n-k][j]<<" ";
         c++;
     }
-    for(int j=n-(k+1);j>=k;j--)  //D to U
+    for(int j=n-(k+1);j>=k+1;j--)  //D to U
     {
         if(c==brk)
         {
