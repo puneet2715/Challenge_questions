@@ -6,7 +6,7 @@ int main()
 {
     string str;
     int n,flag_m=0,m=0;
-    cout<<"enter your string of 1 and 0 's by providing space after each element :"<<endl;
+    cout<<"enter your string of 1 and 0 's :"<<endl;
     getline(cin,str);
     str.push_back('0');
     n=str.capacity();
